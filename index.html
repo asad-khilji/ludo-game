@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+   <div class="container">
+    <div class="ludo-board">
+        <!-- Red Pieces -->
+        <div class="piece red" id="redPiece1" draggable="true" ondragstart="drag(event)">R1</div>
+        <div class="piece red" id="redPiece2" draggable="true" ondragstart="drag(event)">R2</div>
+        <div class="piece red" id="redPiece3" draggable="true" ondragstart="drag(event)">R3</div>
+        <div class="piece red" id="redPiece4" draggable="true" ondragstart="drag(event)">R4</div>
+
+         <!-- Green Pieces -->
+        <div class="piece green" id="greenPiece1" draggable="true" ondragstart="drag(event)">G1</div>
+        <div class="piece green" id="greenPiece2" draggable="true" ondragstart="drag(event)">G2</div>
+        <div class="piece green" id="greenPiece3" draggable="true" ondragstart="drag(event)">G3</div>
+        <div class="piece green" id="greenPiece4" draggable="true" ondragstart="drag(event)">G4</div>
+
+        <!-- Blue Pieces -->
+        <div class="piece blue" id="bluePiece1" draggable="true" ondragstart="drag(event)">B1</div>
+        <div class="piece blue" id="bluePiece2" draggable="true" ondragstart="drag(event)">B2</div>
+        <div class="piece blue" id="bluePiece3" draggable="true" ondragstart="drag(event)">B3</div>
+        <div class="piece blue" id="bluePiece4" draggable="true" ondragstart="drag(event)">B4</div>
+
+        <!-- Yellow Pieces -->
+        <div class="piece yellow" id="yellowPiece1" draggable="true" ondragstart="drag(event)">Y1</div>
+        <div class="piece yellow" id="yellowPiece2" draggable="true" ondragstart="drag(event)">Y2</div>
+        <div class="piece yellow" id="yellowPiece3" draggable="true" ondragstart="drag(event)">Y3</div>
+        <div class="piece yellow" id="yellowPiece4" draggable="true" ondragstart="drag(event)">Y4</div>
+
+    </div>
+    
+    <div class="controls">
+        <button onclick="rollNumber()">Generate Number</button><br> <br>
+        <div id="numberResult">Number: -</div><br>
+        <div id="currentPlayer">Current Player: Red</div><br>
+            <button onclick="nextTurn()">Next Turn</button>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>
